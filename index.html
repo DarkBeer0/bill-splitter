@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bill Splitter - Split bills easily and fairly with friends.">
-    <title>Bill Splitter</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Bill Splitter - Free Online Bill Splitting Calculator | Split Expenses Fairly</title>
+    <meta name="description" content="Free online bill splitter calculator. Easily split restaurant bills, travel expenses, and group costs among friends. Calculate who owes whom instantly. No registration required.">
+    <meta name="keywords" content="bill splitter, split bill calculator, divide expenses, restaurant bill split, group expense calculator, shared costs, split check, expense sharing app, fair bill division">
+    <meta name="author" content="Bill Splitter">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://darkbeer0.github.io/bill-splitter/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://darkbeer0.github.io/bill-splitter/">
+    <meta property="og:title" content="Bill Splitter - Split Bills Easily and Fairly">
+    <meta property="og:description" content="Free online tool to split bills among friends. Perfect for restaurants, trips, and shared expenses. Calculate who owes whom in seconds.">
+    <meta property="og:image" content="https://darkbeer0.github.io/bill-splitter/og-image.png">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://darkbeer0.github.io/bill-splitter/">
+    <meta name="twitter:title" content="Bill Splitter - Split Bills Easily and Fairly">
+    <meta name="twitter:description" content="Free online tool to split bills among friends. Calculate who owes whom in seconds.">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💸</text></svg>">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Google AdSense (загружается только на реальном домене) -->
-    <script>
-    if (window.location.protocol !== 'file:') {
-        var s = document.createElement('script');
-        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4039458334379968';
-        s.async = true;
-        s.crossOrigin = 'anonymous';
-        document.head.appendChild(s);
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4039458334379968" crossorigin="anonymous"></script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Bill Splitter",
+        "url": "https://darkbeer0.github.io/bill-splitter/",
+        "description": "Free online bill splitting calculator for restaurants, trips, and group expenses",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Split bills among multiple people",
+            "Track who paid for what",
+            "Calculate optimal payment transfers",
+            "Support for 6 languages",
+            "Save bill history locally",
+            "Works offline"
+        ]
     }
     </script>
     
@@ -198,6 +240,24 @@ select option { background: var(--bg-card); color: var(--text-primary); }
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-input); border-radius: 4px; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+/* Content Section & FAQ */
+.content-section { background: var(--bg-card); border-radius: var(--radius-xl); border: 1px solid var(--border); padding: 40px 30px; margin-top: 30px; }
+.content-section h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: var(--text-primary); }
+.content-section h3 { font-size: 1.2rem; font-weight: 600; margin: 24px 0 16px; color: var(--text-primary); }
+.content-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px; }
+.faq-section { margin-top: 30px; }
+.faq-item { background: var(--bg-input); border-radius: var(--radius-md); margin-bottom: 10px; border: 1px solid var(--border); }
+.faq-item summary { padding: 16px 20px; cursor: pointer; font-weight: 500; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 1.5rem; color: var(--primary); transition: transform 0.2s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { padding: 0 20px 16px; margin: 0; }
+.faq-item[open] { border-color: var(--primary); }
+.features-text { margin-top: 30px; }
+.features-text p { margin-bottom: 16px; }
+.features-text strong { color: var(--primary-light); }
+.site-footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.85rem; }
+.site-footer p { margin-bottom: 4px; }
 @media (max-width: 640px) {
     .main-wrapper { padding: 16px 12px; }
     .container { border-radius: var(--radius-lg); }
@@ -224,13 +284,13 @@ select option { background: var(--bg-card); color: var(--text-primary); }
     <aside class="ad-sidebar ad-left">
         <div class="ad-container">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4039458334379968" data-ad-slot="6492008610" data-ad-format="vertical" data-full-width-responsive="false"></ins>
-            <script>try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}</script>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
     </aside>
     <aside class="ad-sidebar ad-right">
         <div class="ad-container">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4039458334379968" data-ad-slot="6492008610" data-ad-format="vertical" data-full-width-responsive="false"></ins>
-            <script>try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}</script>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
     </aside>
 
@@ -300,8 +360,62 @@ select option { background: var(--bg-card); color: var(--text-primary); }
         <!-- Мобильная реклама -->
         <div class="ad-mobile">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4039458334379968" data-ad-slot="6492008610" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-            <script>try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}</script>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
+
+        <!-- FAQ Section for SEO & AdSense Content -->
+        <article class="content-section">
+            <h2>How to Split a Bill Fairly</h2>
+            <p>Splitting bills among friends doesn't have to be complicated. Our free bill splitter calculator helps you divide restaurant checks, travel expenses, rent, and any shared costs quickly and accurately. Simply add participants, enter what each person ordered, specify who paid, and get instant results showing exactly who owes whom.</p>
+            
+            <section class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                
+                <details class="faq-item">
+                    <summary>How does the bill splitting calculator work?</summary>
+                    <p>Our bill splitter uses a smart algorithm to minimize the number of transactions needed. First, add all people sharing the bill. Then, add each item with its price and who paid for it. The calculator automatically determines the optimal way to settle debts, so instead of everyone paying everyone, you get the minimum number of transfers needed.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can I split bills with different items per person?</summary>
+                    <p>Yes! Unlike simple bill dividers that just split the total equally, our calculator lets you assign specific items to specific people. This is perfect for restaurant bills where everyone ordered different dishes at different prices. Each person only pays for what they actually consumed.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What currencies are supported?</summary>
+                    <p>Bill Splitter automatically detects your language and sets the appropriate currency. We support USD ($), EUR (€), GBP (£), RUB (₽), UAH (₴), and PLN (zł). You can manually switch between 6 languages: English, German, Spanish, Polish, Russian, and Ukrainian.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Is my data saved anywhere?</summary>
+                    <p>Your privacy is important. All calculations happen locally in your browser. Bill history is saved only on your device using local storage. We don't collect, store, or transmit any of your financial data to external servers. You can clear your history anytime from your browser settings.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can I use this for recurring shared expenses?</summary>
+                    <p>Absolutely! Bill Splitter is great for roommates splitting rent and utilities, travel groups sharing accommodation costs, office teams dividing lunch orders, or any situation where multiple people share expenses. Save your bills to history and load them later as templates.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Does it work offline?</summary>
+                    <p>Yes! Once the page loads, Bill Splitter works completely offline. This makes it perfect for splitting bills at restaurants with poor internet connection. Your saved bill history is also available offline since it's stored locally on your device.</p>
+                </details>
+            </section>
+            
+            <section class="features-text">
+                <h3>Why Use Bill Splitter?</h3>
+                <p><strong>Fair and Transparent:</strong> Everyone sees exactly what they're paying for. No more arguments about who owes what.</p>
+                <p><strong>Minimized Transactions:</strong> Our algorithm calculates the optimal payment flow, reducing the number of money transfers between friends.</p>
+                <p><strong>No Registration Required:</strong> Start splitting bills immediately. No account creation, no email verification, no hassle.</p>
+                <p><strong>Mobile Friendly:</strong> Works perfectly on phones, tablets, and desktops. Split bills on the go, right at the restaurant table.</p>
+                <p><strong>100% Free:</strong> No premium features locked behind paywalls. All functionality is completely free to use.</p>
+            </section>
+        </article>
+        
+        <footer class="site-footer">
+            <p>© 2025 Bill Splitter — Free Online Bill Splitting Calculator</p>
+            <p>Split restaurant bills, travel expenses, and shared costs fairly among friends.</p>
+        </footer>
     </main>
 
     <div id="productModal" class="modal">
